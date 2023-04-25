@@ -1,0 +1,11 @@
+Source: pika-plasma-welcome
+Section: misc
+Priority: optional
+Maintainer: Ward Nakchbandi <hotrod.master@hotmail.com>
+Standards-Version: 4.6.1
+Build-Depends: debhelper-compat (= 13)
+
+Package: pika-plasma-welcome
+Architecture: all
+Depends: plasma-welcome
+Description: PikaOS Extensions for plasma welcome
