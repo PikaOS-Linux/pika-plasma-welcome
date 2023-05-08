@@ -30,7 +30,7 @@ GenericPage {
             cursorShape: Qt.PointingHandCursor
         }
         TapHandler {
-            onTapped: showPassiveNotification(i18n("Why on earth would you click this!?"));
+            onTapped: Controller.runCommand("notify-send foo bar")
         }
 
         QQC2.ToolTip {
