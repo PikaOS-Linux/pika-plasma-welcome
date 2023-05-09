@@ -14,8 +14,8 @@ import QtGraphicalEffects 1.15
 import org.kde.plasma.welcome 1.0
 
 GenericPage {
-    heading: i18nc("@info:window", "Welcome to NateOS")
-    description: i18nc("@info:usagetip", "It's the best distro in the world, until it explodes.")
+    heading: i18nc("@info:window", "Installing Media Codecs")
+    description: i18nc("@info:usagetip", "You can install multimedia codecs to enable video playback (Recommended).")
 
     Kirigami.Icon {
         id: image
@@ -23,19 +23,14 @@ GenericPage {
         anchors.verticalCenterOffset: -Kirigami.Units.gridUnit * 4
         width: Kirigami.Units.gridUnit * 10
         height: Kirigami.Units.gridUnit * 10
-        source: "granatier"
+        source: media-tape
 
         HoverHandler {
             id: hoverhandler
             cursorShape: Qt.PointingHandCursor
         }
         TapHandler {
-            onTapped: Controller.runCommand("notify-send foo bar")
-        }
-
-        QQC2.ToolTip {
-            visible: hoverhandler.hovered
-            text: i18nc("@action:button", "Detonating the bomb in 3... 2... 1...")
+            onTapped: Controller.runCommand("codeccheck")
         }
 
         layer.enabled: true
@@ -52,7 +47,7 @@ GenericPage {
     Kirigami.Heading {
         anchors.horizontalCenter: parent.horizontalCenter
         anchors.top: image.bottom
-        text: i18nc("@title the name of the 'System Exploder' app", "Someone set up us the bomb")
+        text: i18nc("@title Open Codec installer", "Open Codec installer")
         wrapMode: Text.WordWrap
         level: 3
     }

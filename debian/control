@@ -7,5 +7,5 @@ Build-Depends: debhelper-compat (= 13)
 
 Package: pika-plasma-welcome
 Architecture: all
-Depends: plasma-welcome
+Depends: plasma-welcome, pika-welcome
 Description: PikaOS Extensions for plasma welcome
