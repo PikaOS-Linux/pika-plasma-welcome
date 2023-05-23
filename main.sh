@@ -7,6 +7,7 @@ add-apt-repository ppa:kubuntu-ppa/backports
 mkdir -p ./pika-plasma-welcome
 cp -rvf ./debian ./pika-plasma-welcome/
 cp -rvf ./usr ./pika-plasma-welcome/
+cp -rvf ./etc ./pika-plasma-welcome/
 cd ./pika-plasma-welcome
 
 # Get build deps
