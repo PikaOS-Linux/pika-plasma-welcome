@@ -11,7 +11,10 @@ import QtQuick.Layouts 1.15
 import org.kde.kirigami 2.15 as Kirigami
 import QtGraphicalEffects 1.15
 
+import org.kde.welcome 1.0
 import org.kde.plasma.welcome 1.0
+
+
 
 GenericPage {
     heading: i18nc("@info:window", "Update your system")
@@ -23,7 +26,7 @@ GenericPage {
         anchors.verticalCenterOffset: -Kirigami.Units.gridUnit * 4
         width: Kirigami.Units.gridUnit * 10
         height: Kirigami.Units.gridUnit * 10
-        source: system-software-update
+        source: "system-software-update"
 
         HoverHandler {
             id: hoverhandler

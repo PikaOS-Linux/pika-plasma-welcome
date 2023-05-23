@@ -1,0 +1,10 @@
+#! /bin/bash
+DISPLAY_CHECK=$(echo $DISPLAY)
+WHO=$(whoami)
+if [[ $DISPLAY_CHECK ]] && [[ $WHO != "pikaos" ]] && [[ $WHO != "gnome-initial-setup" ]]; then
+	if [[ ! -f $HOME/.config/pika-first-setup-done ]]
+	then
+		plasma-welcome && mkdir -p $HOME/.config && touch $HOME/.config/pika-first-setup-done
+	fi
+fi
+
