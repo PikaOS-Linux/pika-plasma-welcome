@@ -32,7 +32,7 @@ GenericPage {
             cursorShape: Qt.PointingHandCursor
         }
         TapHandler {
-            onTapped: Controller.runCommand("bash -c mintdrivers")
+            onTapped: Controller.runCommand("bash -c pika-drivers")
         }
 
         layer.enabled: true
